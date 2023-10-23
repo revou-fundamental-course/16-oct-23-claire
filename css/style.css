@@ -22,7 +22,7 @@
     cursor: pointer;
 }
 .nav-item:hover{
-    background: rgb(255, 255, 0);
+    background: #FEDD59;
 }
 .banner {
     background-image: url('../assets/background.jpg');
@@ -44,21 +44,43 @@
     padding: 3em;
 }
 .circle {
-    height: 150px;
-    width: 150px;
+    height: 110px;
+    width: 110px;
     border: 1px solid black;
     border-radius: 50%;
+    
+    
 }
 
 .hq-items {
     padding: 2em 5em;
+    padding-left: 2px;
     display: flex;
-    align-items: first baseline;
-    justify-content: space-around; 
+    justify-content: space-around;
 
+}
+.hq-text p{
+    display: flex;
+    font-size: medium;
+    font-family: Arial;
+    padding: 10px;
+    padding-left: 10px;
+    word-spacing: 150px;
 }
 
 .footer-text {
     font-size: small;
     font-family: Arial;
+}
+.form-left{
+    padding-left: 2.5em;
+    line-height: 2.5em;
+    font-size: 18px;
+    font-family: arial;
+}
+.submit {
+    border-width: 2px solid black; 
+    padding-left: 230px; 
+    padding-right: 230px; 
+    text-align: center;
 }

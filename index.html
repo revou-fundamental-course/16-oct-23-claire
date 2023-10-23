@@ -27,21 +27,42 @@
         <div class="hq-items">
             <!--flex agar item bisa menyamping-->
             <!--justify-content: space arround untuk memberi jarak agar sama di samping kanan kiri-->
-            <div class="circle">Proffesional Teacher</div>
-            <div class="circle">Sport Field</div>
-            <div class="circle">Classroom</div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="hq-text">
+            <p>Jakarta Bandung Surabaya</p>
         </div>
     </section>
     <section class="form">
-        <h2 id="message-us">Message Us</h2>
+        <h2 style="font-family: arial; padding-left: 2em;">Message Us</h2>
         <div class="form-left">
             <form>
                 <table>
-                    <td>Nama :</td>
-                    <td>
-                    <input id="Nama" name="Nama" type="text" placeholder="Nama">
-                    </td>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td><input id="Nama" name="Nama" type="text" placeholder="Nama"></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>:</td>
+                    <td><input id="Tanggal Lahir" type="date"></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td><input type="radio" id="laki-laki" name="gender"><label for="laki-laki">Laki-laki</label></td>
+				    <td><input type="radio" id="perempuan" name="gender"><label for="perempuan">Perempuan</label></td>
+                </tr>
+                <tr>
+                    <td>Pesan</td>
+                    <td>:</td>
+                    <td><textarea input id="Pesan" name="Pesan" type="text" placeholder="Pesan" style="font-size: 18px;"></textarea></td>
+                </tr>
                 </table>
+                <input type="Submit" value="Submit" class="submit">
             </form>
         </div>
         <div class="form-right">
