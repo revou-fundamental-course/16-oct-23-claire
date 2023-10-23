@@ -18,8 +18,15 @@
     </header>
     <section class="banner">
         <div class="greetings">
-        <h1>Hi Claire, Welcome To Website !</h1>
+        <h1>Hi <span id="name"> Claire </span> Welcome To Website !</h1>
         <p>Ini adalah latihan website pertama</p>
+        <!--button id="tombol">Ganti Nama</button>-->
+        <form name="message-form" onsubmit="return validateForm()">
+            <input type="text" placeholder="Nama Anda" id="name-input" name="name-input">
+            <button id="submit" type="submit">Kirim</button>
+            <p id="error-name"></p>
+        </form>
+        <script src="./js/script.js"></script>
         </div>
     </section>
     <section class="headquarters"> 
