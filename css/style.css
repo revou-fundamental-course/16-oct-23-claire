@@ -4,6 +4,7 @@
     align-items: center;
     padding: 0em 2em;
     border-bottom: 1px solid darkslategray;
+    
 }
 
 .nav-logo img{
@@ -11,6 +12,7 @@
 }
 .nav {
     display: flex;
+    
 
 }
 .nav-item {
@@ -20,6 +22,7 @@
     min-width: 60px;
     text-align: center;
     cursor: pointer;
+    text-decoration: none;
 }
 .nav-item:hover{
     background: #FEDD59;
@@ -53,20 +56,14 @@
 }
 
 .hq-items {
-    padding: 2em 5em;
+    padding: 4px;
     padding-left: 2px;
     display: flex;
     justify-content: space-around;
 
 }
-.hq-text p{
-    display: flex;
-    font-size: medium;
-    font-family: Arial;
-    padding: 10px;
-    padding-left: 10px;
-    word-spacing: 150px;
-}
+
+
 
 .footer-text {
     font-size: small;
