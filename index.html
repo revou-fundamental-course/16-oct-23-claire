@@ -8,9 +8,97 @@
 </head>
 <body>
     <header class="header">
-        <div class="nav-logo">Logo</div>
-        <nav class="nav">Navigation</nav>
+        <div class="nav-logo"><img src="./assets/revou.png" alt="revou"></div>
+        <nav class="nav">
+            <div class="nav-item"><a href="https://revou.co/culture?&eid=1698237413874&targeting=2&cat=C&x6=K" class="href-text">Our Profile</a></div>
+            <div class="nav-item"><a href="#home" class="href-text">Home</a></div>
+            <div class="nav-item"><class="href-text">Portofolio</a></div>
+            <div class="nav-item"><a href="#message-us" class="href-text">Message Us</a></div>
+        </nav>
     </header>
+    <section class="banner">
+        <div class="greetings" id="home">
+        <h1>Hi Claire Welcome To Website !</h1>
+        <p>Ini adalah latihan website pertama</p>
+        <!--button id="tombol">Ganti Nama</button>-->
+        </div>
+    </section>
+    <section class="headquarters"> 
+        <h1 style="font-family: arial;">Our Facilitation</h1>
+        <div class="hq-items">
+            <!--flex agar item bisa menyamping-->
+            <!--justify-content: space arround untuk memberi jarak agar sama di samping kanan kiri-->
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="hq-circle"></div>
+        </div>
+        <div>
+            <div class="hq-text">Jakarta</div>
+            <div class="hq-text">Bandung</div>
+            <div class="hq-text">Surabaya</div>
+        </div>
+    </section>
+    <div class="hq-border"></div>
+    <section class="form">
+        <h2 style="font-family: arial; padding-left: 2em;" id="message-us">Message Us</h2>
+        <div class="form-left">
+            <form id="message-us" onsubmit="return validateForm()">
+                <table>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td><input id="nama" name="namalengkap" type="text" placeholder="Nama"></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>:</td>
+                    <td><input id="tanggallahir" name="tgllahir" type="date"></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td><input type="radio" id="laki-laki" name="gender"><label for="laki-laki">Laki-laki</label></td>
+				    <td><input type="radio" id="perempuan" name="gender"><label for="perempuan">Perempuan</label></td>
+                </tr>
+                <tr>
+                    <td>Pesan</td>
+                    <td>:</td>
+                    <td><textarea input id="pesan" name="pesan" type="text" placeholder="Pesan" style="font-size: 18px;"></textarea></td>
+                </tr>
+                </table>
+                <input type="Submit" value="Submit" target class="submit">
+            </form>
+        </div>
+    </section>
+    <div class="form-right">
+        <form>
+        <table class="tableform">
+            <tr>
+                <td>Nama <span id="sender-fullname"></span></td>
+                <td>: Claire</td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir <span id="sender-birthdate"></span></td>
+                <td>: 06 April 2005</td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin <span id="sender-gender"></span></td>
+                <td>: Perempuan</td>
+            </tr>
+            <tr>
+                <td>Pesan <span id="sender-message"></span></td>
+                <td>: Revo U Keren</td>
+            </tr>
+        </form>
+        </table>
+    </div>
+    
+    <footer class="footer">
+        <center>
+            <h5>made by Claire</h5>
+        </center>      
+    </footer>
     <script src="./js/script.js"></script>
-</body>
-</html>l
+    </body>
+</html>
