@@ -22,7 +22,6 @@
     min-width: 60px;
     text-align: center;
     cursor: pointer;
-    text-decoration: none;
 }
 .nav-item:hover{
     background: #FEDD59;
@@ -43,38 +42,69 @@
     padding-left: 100px;
 }
 
+.href-text {
+    text-decoration: none;
+    text-decoration-color: none;
+}
+
 .headquarters {
     padding: 3em;
 }
 .circle {
-    height: 110px;
-    width: 110px;
+    height: 150px;
+    width: 150px;
     border: 1px solid black;
-    border-radius: 50%;
-    
-    
+    border-radius: 50%;     
+}
+
+.hq-circle {
+    margin-left: 250px;
 }
 
 .hq-items {
     padding: 4px;
     padding-left: 2px;
     display: flex;
+    margin-top: 50px;
     justify-content: space-around;
-
 }
 
+.hq-text {
+   font-size: 25px;
+   font-family: arial;
+   display: inline-flex;
+   padding: 94px;
+}
 
+.hq-border {
+    display: auto;
+    border-bottom: 1px solid black;
+    margin-bottom: 80px;
+}
 
 .footer-text {
     font-size: small;
     font-family: Arial;
 }
+
+
 .form-left{
     padding-left: 2.5em;
     line-height: 2.5em;
     font-size: 19px;
     font-family: arial;
 }
+
+.form-right {
+    padding-left: 2.5em;
+    line-height: 2.5em;
+    font-size: 19px;
+    font-family: arial;
+    
+}
+
+
+
 .submit {
     border-width: 2px solid black; 
     padding-left: 230px; 

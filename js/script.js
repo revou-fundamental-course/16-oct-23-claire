@@ -1,17 +1,22 @@
 function validateForm() {
-    const nama = document.forms['message-form'][name-input].value;
-    if(nama == '') {
-        document.getElementById("error-name").innerHTML = "Tidak Boleh Kosong"
-        return false
-    }
-    document.getElementById("name").innerHTML = nama;
-    document.getElementById("error-name").innerHTML = "";
-    return false
+    const nama = document.forms["message-us"]["namalengkap"].value;
+    const tanggallahir = document.forms ["message-us"]["tgllahir"].value;
+    const gender = document.forms ["message-us"]["gender"].value;
+    const pesan = document.forms ["message-us"]["pesan"].value;
+
+    if (Nama == "" || tanggal-lahir == "" || gender == "" || pesan == "") {
+    alert("Tidak Boleh Kosong");
+    return false;
 }
 
-var today = new Date();
-var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-var dateTime = date+' '+time;
- 
-console.log(dateTime)
+setSenderUI(nama, tanggallahir, gender, pesan);
+return false;
+
+}
+
+function setSenderUI (nama, tanggallahir, gender, pesan) {
+    document.getElementById("sender-fullname").innerHTML = nama;
+    document.getElementById("sender-birthdate").innerHTML = tanggallahir;
+    document.getElementById("sender-gender").innerHTML = gender;
+    document.getElementById("sender-message").innerHTML = pesan;
+}
